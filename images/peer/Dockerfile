@@ -18,7 +18,9 @@ RUN apk add --no-cache \
 	gcc \
 	git \
 	make \
-	musl-dev
+	musl-dev \
+	supervisor
+#ADD /supervisor /src/supervisor
 ADD . $GOPATH/src/github.com/hyperledger/fabric
 WORKDIR $GOPATH/src/github.com/hyperledger/fabric
 
@@ -34,4 +36,5 @@ COPY --from=peer /go/src/github.com/hyperledger/fabric/build/bin /usr/local/bin
 COPY --from=peer /go/src/github.com/hyperledger/fabric/sampleconfig/msp ${FABRIC_CFG_PATH}/msp
 COPY --from=peer /go/src/github.com/hyperledger/fabric/sampleconfig/core.yaml ${FABRIC_CFG_PATH}
 EXPOSE 7051
+#CMD ["supervisord","-c","/src/supervisor/service_script.conf"]
 CMD ["peer","node","start"]

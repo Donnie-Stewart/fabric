@@ -332,7 +332,6 @@ func (couchInstance *couchInstance) verifyCouchConfig() (*connectionInfo, *dbRet
 
 	couchdbLogger.Debugf("Entering VerifyCouchConfig()")
 	defer couchdbLogger.Debugf("Exiting VerifyCouchConfig()")
-
 	connectURL, err := url.Parse(couchInstance.url())
 	if err != nil {
 		couchdbLogger.Errorf("URL parse error: %s", err)
@@ -1390,6 +1389,7 @@ func (dbclient *couchDatabase) applyDatabaseSecurity(databaseSecurity *databaseS
 //batchRetrieveDocumentMetadata - batch method to retrieve document metadata for  a set of keys,
 //including ID, couchdb revision number, and ledger version
 func (dbclient *couchDatabase) batchRetrieveDocumentMetadata(keys []string) ([]*docMetadata, error) {
+	fmt.Println("\n\n\n\n\n0\n\n\n\n\n\n++++++++++++++++++++++++++++++++++++++++hello\n+++++++++++++++++++++++++++\n11111111111111111111111111111\n8888888888888888888888888888888\n\n\n\n\n\n\n")
 
 	couchdbLogger.Debugf("[%s] Entering BatchRetrieveDocumentMetadata()  keys=%s", dbclient.dbName, keys)
 
@@ -1477,6 +1477,7 @@ func (dbclient *couchDatabase) batchUpdateDocuments(documents []*couchDoc) ([]*b
 		couchdbLogger.Errorf("URL parse error: %s", err)
 		return nil, errors.Wrapf(err, "error parsing CouchDB URL: %s", dbclient.couchInstance.url())
 	}
+	fmt.Println("\n\n\n\n\n1\n\n\n\n\n\n++++++++++++++++++++++++++++++++++++++++hello\n+++++++++++++++++++++++++++\n11111111111111111111111111111\n8888888888888888888888888888888\n\n\n\n\n\n\n")
 
 	documentMap := make(map[string]interface{})
 

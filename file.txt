@@ -1,0 +1,318 @@
+[
+    {
+        "Id": "1e852c0ce3b42ed0fbd7e05e93ee7561870c79651176e0c4a18aebaab2c842d4",
+        "Created": "2020-09-09T00:25:04.5987337Z",
+        "Path": "peer",
+        "Args": [
+            "node",
+            "start"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 5288,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2020-09-09T00:25:06.9324121Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:524c96d1d324b2548161d9421dfb9dab5633b29e35b36bd938da38e01f53f11c",
+        "ResolvConfPath": "/var/lib/docker/containers/1e852c0ce3b42ed0fbd7e05e93ee7561870c79651176e0c4a18aebaab2c842d4/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/1e852c0ce3b42ed0fbd7e05e93ee7561870c79651176e0c4a18aebaab2c842d4/hostname",
+        "HostsPath": "/var/lib/docker/containers/1e852c0ce3b42ed0fbd7e05e93ee7561870c79651176e0c4a18aebaab2c842d4/hosts",
+        "LogPath": "/var/lib/docker/containers/1e852c0ce3b42ed0fbd7e05e93ee7561870c79651176e0c4a18aebaab2c842d4/1e852c0ce3b42ed0fbd7e05e93ee7561870c79651176e0c4a18aebaab2c842d4-json.log",
+        "Name": "/peer0.org1.example.com",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/var/run:/host/var/run:rw",
+                "/Users/donniestewart/Desktop/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/fabric/msp:rw",
+                "/Users/donniestewart/Desktop/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls:/etc/hyperledger/fabric/tls:rw",
+                "net_peer0.org1.example.com:/var/hyperledger/production:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "net_test",
+            "PortBindings": {
+                "7051/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "7051"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "Capabilities": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/550352225fa8dfa5082367a05219b32fc359739f445e4c9f924666d3b57a852d-init/diff:/var/lib/docker/overlay2/2578a8489b07cedf7d82c07f7e86841672db044a485534f84c5592a817759375/diff:/var/lib/docker/overlay2/5f878bb99b5c675547fdf52a26f5557dff94c5005133d144baec7483fdb6c8d1/diff:/var/lib/docker/overlay2/01fd846d1afa486d512c2c27989472bb3ae235852c6f7218986003ffef1f3db9/diff:/var/lib/docker/overlay2/e6f70210dc510c7d86b1d924bee930eef7cb6ec6a3994fc20365f08c4365cd11/diff:/var/lib/docker/overlay2/7deedab553789d071783653e86a45065854179f97db88d44ef586a215838b3a1/diff:/var/lib/docker/overlay2/f7db36ee29a1926b7795baabe031e241ef87d1f6c882a55ee1c69b3a24672625/diff",
+                "MergedDir": "/var/lib/docker/overlay2/550352225fa8dfa5082367a05219b32fc359739f445e4c9f924666d3b57a852d/merged",
+                "UpperDir": "/var/lib/docker/overlay2/550352225fa8dfa5082367a05219b32fc359739f445e4c9f924666d3b57a852d/diff",
+                "WorkDir": "/var/lib/docker/overlay2/550352225fa8dfa5082367a05219b32fc359739f445e4c9f924666d3b57a852d/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "f896d6a0c345e4282d1eafc190af121fbcc0e0df35fef9eaaad5de968e7da8c3",
+                "Source": "/var/lib/docker/volumes/f896d6a0c345e4282d1eafc190af121fbcc0e0df35fef9eaaad5de968e7da8c3/_data",
+                "Destination": "/etc/hyperledger/fabric",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "3ef41b0b4e2e7ef52aec830a3c5604c9c81da8599fdcf9664a671816e10c5a06",
+                "Source": "/var/lib/docker/volumes/3ef41b0b4e2e7ef52aec830a3c5604c9c81da8599fdcf9664a671816e10c5a06/_data",
+                "Destination": "/var/hyperledger",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/var/run",
+                "Destination": "/host/var/run",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/Users/donniestewart/Desktop/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp",
+                "Destination": "/etc/hyperledger/fabric/msp",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/Users/donniestewart/Desktop/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls",
+                "Destination": "/etc/hyperledger/fabric/tls",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "net_peer0.org1.example.com",
+                "Source": "/var/lib/docker/volumes/net_peer0.org1.example.com/_data",
+                "Destination": "/var/hyperledger/production",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "1e852c0ce3b4",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "7051/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock",
+                "CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=net_test",
+                "FABRIC_LOGGING_SPEC=INFO",
+                "CORE_PEER_TLS_ENABLED=true",
+                "CORE_PEER_PROFILE_ENABLED=true",
+                "CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/server.crt",
+                "CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/server.key",
+                "CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt",
+                "CORE_PEER_ID=peer0.org1.example.com",
+                "CORE_PEER_ADDRESS=peer0.org1.example.com:7051",
+                "CORE_PEER_LISTENADDRESS=0.0.0.0:7051",
+                "CORE_PEER_CHAINCODEADDRESS=peer0.org1.example.com:7052",
+                "CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052",
+                "CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org1.example.com:7051",
+                "CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org1.example.com:7051",
+                "CORE_PEER_LOCALMSPID=Org1MSP",
+                "CORE_LEDGER_STATE_STATEDATABASE=CouchDB",
+                "CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb0:5984",
+                "CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=admin",
+                "CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=adminpw",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "FABRIC_CFG_PATH=/etc/hyperledger/fabric"
+            ],
+            "Cmd": [
+                "peer",
+                "node",
+                "start"
+            ],
+            "Image": "hyperledger/fabric-peer:latest",
+            "Volumes": {
+                "/etc/hyperledger/fabric": {},
+                "/etc/hyperledger/fabric/msp": {},
+                "/etc/hyperledger/fabric/tls": {},
+                "/host/var/run": {},
+                "/var/hyperledger": {},
+                "/var/hyperledger/production": {}
+            },
+            "WorkingDir": "/opt/gopath/src/github.com/hyperledger/fabric/peer",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "ba78f3afc0e4c8510f7f2e7f5d4373cdfba360e23e77f81b873970c1d01f5147",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "net",
+                "com.docker.compose.project.config_files": "docker/docker-compose-test-net.yaml,docker/docker-compose-couch.yaml",
+                "com.docker.compose.project.working_dir": "/Users/donniestewart/Desktop/fabric-samples/test-network/docker",
+                "com.docker.compose.service": "peer0.org1.example.com",
+                "com.docker.compose.version": "1.26.2"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "e38479fae248d6e02f94b0e422763d8f2d745d51ac57fad69e770e63cb3c4d43",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "7051/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "7051"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/e38479fae248",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "net_test": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "1e852c0ce3b4",
+                        "peer0.org1.example.com"
+                    ],
+                    "NetworkID": "9a3b3de6980bc4851e95bfd510863c6e86fe390efadcd0eb24ca836c75079275",
+                    "EndpointID": "082544cebbcbb4b9a17c233640613c75c506f4c32864903c73e5e423059c1ad3",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.9",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:13:00:09",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]

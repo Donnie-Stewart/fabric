@@ -333,7 +333,7 @@ func getLocalAddress() (string, error) {
 		return "", err
 	}
 	autoDetectedIPAndPort := net.JoinHostPort(localIP, port)
-	peerLogger.Info("Donnie & Salman Auto-detected peer address:", autoDetectedIPAndPort)
+	peerLogger.Info("Donnies Auto-detected peer address:", autoDetectedIPAndPort)
 	// If host is the IPv4 address "0.0.0.0" or the IPv6 address "::",
 	// then fallback to auto-detected address
 	if ip := net.ParseIP(host); ip != nil && ip.IsUnspecified() {
